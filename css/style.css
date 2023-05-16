@@ -46,6 +46,7 @@ table {
 
 input,
 select {
+  border-radius: 4px;
   background-color: #f9ba15;
 }
 
