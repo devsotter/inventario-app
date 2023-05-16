@@ -1,0 +1,28 @@
+@import url(reset.css);
+h1 {
+  margin: 30px;
+}
+
+.meu-ul {
+  margin: 30px;
+  padding: 0;
+  list-style: none;
+  width: 250px;
+  background-color: #2c2c2c;
+  border-radius: 4px;
+}
+
+.meu-li {
+  text-align: left;
+  font-size: 14px;
+}
+
+.meu-li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #f9ba15;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 3px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Log Pessoal do Cofre</title>
+  </head>
+
+  <body onload="carregarAlteracoes('alteracoes')">
+    <img class="bensa" src="img/channels4_profile.jpg" alt="bensa" />
+
+    <div class="container">
+      <div class="box">
+        <form>
+          <table>
+            <h1>Log privado do Cofre</h1>
+            <tr>
+              <td class="tipoItem">Vulgo do personagem:</td>
+              <td><input id="nomePersonagem" type="text" /></td>
+            </tr>
+
+            <tr>
+              <td class="tipoProduto">Nome do item:</td>
+              <td><input id="nomeProduto" type="text" /></td>
+            </tr>
+
+            <tr>
+              <td class="tipoItem">Quantidade de itens</td>
+              <td>
+                <select id="qtidadeProduto"></select>
+              </td>
+            </tr>
+            <tr>
+              <td class="botoes">
+                <input
+                  type="button"
+                  value="Cadastrar"
+                  class="alinhaBtns"
+                  onclick="validarProduto('nomePersonagem','nomeProduto','qtidadeProduto')"
+                />
+                <input
+                  type="button"
+                  value="Ver estoque"
+                  class="alinhaBtns"
+                  onclick="window.open('cofre.html','_self')"
+                />
+                <input type="reset" value="Limpar" class="alinhaBtns" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var selectTag = document.getElementById("qtidadeProduto");
+
+      for (var i = 1; i <= 100; i++) {
+        var optionTag = document.createElement("option");
+        optionTag.value = i;
+        optionTag.text = i;
+        selectTag.appendChild(optionTag);
+      }
+    </script>
+  </body>
+</html>

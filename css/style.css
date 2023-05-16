@@ -1,0 +1,58 @@
+@import url(reset.css);
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  z-index: 2;
+  margin: 20px;
+}
+
+h1::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #f9ba15;
+}
+
+table {
+  border: 0.1px solid #f0f0f0;
+  z-index: 2;
+  background-color: #383838;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  margin: 20px;
+}
+
+.botoes {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input,
+select {
+  background-color: #f9ba15;
+}
+
+.bensa {
+  position: absolute;
+
+  border-radius: 5px;
+  opacity: 0.1;
+  z-index: 1;
+}
